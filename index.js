@@ -28,9 +28,6 @@ app.set('port', process.env.PORT || 3000);
 // Rutas
 app.use('/api/auth', router);
 
-app.use('/test', (req, res) => {
-    res.json({message: 'funcionando'});
-})
 
 // Manejar demas rutas
 app.get('*', (req, res) => {
