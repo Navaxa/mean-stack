@@ -77,6 +77,7 @@ const loginUsuario = async (req, res) => {
       token
     })
   } catch(error) {
+    console.log('error => ', error);
     res.status(500).json({
       ok: false,
       message: 'Contacte con el administrador'
