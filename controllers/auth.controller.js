@@ -80,7 +80,7 @@ const loginUsuario = async (req, res) => {
     console.log('error => ', error);
     res.status(500).json({
       ok: false,
-      message: error
+      message: 'Contacte con el administrador'
     });
   }
 
