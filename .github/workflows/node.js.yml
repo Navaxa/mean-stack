@@ -24,6 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: docker build -t mean:0.0.1 .
-    - run: docker run -d -p 9010:3000 -name mean-app mean:0.0.1
+    - run: docker run -d -p 9010:3000 --name mean-app mean:0.0.1
     # - run: npm i
     # - run: pm2 restart mean
